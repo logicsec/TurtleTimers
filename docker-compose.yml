@@ -1,0 +1,8 @@
+services:
+  turtletimers:
+    build: .
+    restart: unless-stopped
+    environment:
+      - DISCORD_TOKEN
+      - CLIENT_ID
+      - GUILD_ID
